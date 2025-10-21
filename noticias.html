@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Fundación EP Lirio de los Valles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/fav-icon fundacion.png">
+    <link rel="stylesheet" href="./estilos/noticias.css">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn theme-btn-light active" onclick="setTheme('light')" title="Tema Claro">☀️</button>
+        <button class="theme-btn theme-btn-dark-green" onclick="setTheme('dark-green')" title="Tema Verde Oscuro">🌲</button>
+        <button class="theme-btn theme-btn-dark" onclick="setTheme('dark')" title="Tema Oscuro">🌙</button>
+        <button class="theme-btn theme-btn-coffee" onclick="setTheme('coffee')" title="Tema Café">☕</button>
+        <button class="theme-btn theme-btn-blue" onclick="setTheme('blue')" title="Tema Azul">💧</button>
+        <button class="theme-btn theme-btn-pink" onclick="setTheme('pink')" title="Tema Rosa">🌸</button>
+        <button class="theme-btn theme-btn-purple" onclick="setTheme('purple')" title="Tema Púrpura">👑</button>
+        <button class="theme-btn theme-btn-orange" onclick="setTheme('orange')" title="Tema Naranja">🌅</button>
+        <button class="theme-btn theme-btn-yellow" onclick="setTheme('yellow')" title="Tema Amarillo">🌻</button>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="./img/logo.jpg" alt="Logo EP Lirio de los Valles">
+                </div>
+                <div class="logo-text">Fundación EP Lirio de los Valles</div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="noticias.html" class="active">Noticias</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- News Hero Section -->
+    <section class="news-hero">
+        <h1 class="news-title">Noticias de la Fundación</h1>
+        <p class="news-subtitle">Mantente al día con las últimas noticias, eventos y actualizaciones sobre nuestros programas de educación ambiental y conservación.</p>
+    </section>
+    <!-- Banners Section -->
+    <section class="banners-section">
+        <div class="section-header">
+            <h2 class="section-title">Banners Educativos</h2>
+            <p class="section-subtitle">Descubre nuestros materiales educativos y campañas de concientización</p>
+        </div>
+        <div class="banners-grid">
+            <div class="banner-card">
+                <img src="https://placehold.co/400x200/10b981/ffffff?text=Educación+Ambiental" alt="Educación Ambiental" class="banner-image">
+                <div class="banner-content">
+                    <span class="banner-date">18 de marzo, 2025</span>
+                    <h3 class="banner-title">Guía para Maestros: Educación Ambiental en el Aula</h3>
+                    <p class="banner-description">Recursos gratuitos para docentes que desean integrar la educación ambiental en sus planes de estudio.</p>
+                    <a href="#" class="banner-btn">
+                        <i class="fas fa-download"></i> Descargar
+                    </a>
+                </div>
+            </div>
+            <div class="banner-card">
+                <img src="https://placehold.co/400x200/059669/ffffff?text=Conservación+Infantil" alt="Conservación Infantil" class="banner-image">
+                <div class="banner-content">
+                    <span class="banner-date">15 de marzo, 2025</span>
+                    <h3 class="banner-title">Cuentos Ecológicos para Niños</h3>
+                    <p class="banner-description">Colección de cuentos interactivos que enseñan valores de conservación a los más pequeños.</p>
+                    <a href="#" class="banner-btn">
+                        <i class="fas fa-book"></i> Leer
+                    </a>
+                </div>
+            </div>
+            <div class="banner-card">
+                <img src="https://placehold.co/400x200/047857/ffffff?text=Talleres+Comunitarios" alt="Talleres Comunitarios" class="banner-image">
+                <div class="banner-content">
+                    <span class="banner-date">12 de marzo, 2025</span>
+                    <h3 class="banner-title">Talleres Comunitarios de Sostenibilidad</h3>
+                    <p class="banner-description">Aprende prácticas sostenibles para tu hogar y comunidad con nuestros talleres gratuitos.</p>
+                    <a href="#" class="banner-btn">
+                        <i class="fas fa-calendar"></i> Inscribirse
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos Section -->
+    <section class="videos-section">
+        <div class="section-header">
+            <h2 class="section-title">Videos Educativos</h2>
+            <p class="section-subtitle">Videos informativos sobre educación ambiental y conservación</p>
+        </div>
+        <div class="videos-grid">
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/10b981/ffffff?text=Video+Educativo+1">
+                        <source src="./videos/Carlos Vives - Pa Mayte (En Vivo Desde Santa Marta) .mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/10b981/ffffff?text=Video+Educativo+1" alt="Video Educativo 1" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">16 de marzo, 2025</span>
+                    <h3 class="video-title">El Ciclo del Agua para Niños</h3>
+                    <p class="video-description">Explicación sencilla y divertida del ciclo del agua para estudiantes de primaria.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/Carlos Vives - Pa Mayte (En Vivo Desde Santa Marta) .mp4', 'El Ciclo del Agua para Niños')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/059669/ffffff?text=Video+Educativo+2">
+                        <source src="./videos/Beéle - si te pillara .mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/059669/ffffff?text=Video+Educativo+2" alt="Video Educativo 2" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">14 de marzo, 2025</span>
+                    <h3 class="video-title">Biodiversidad en Nuestro Entorno</h3>
+                    <p class="video-description">Descubre la riqueza de especies que habitan en nuestros ecosistemas locales.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/Beéle - si te pillara .mp4', 'Biodiversidad en Nuestro Entorno')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/047857/ffffff?text=Video+Educativo+3">
+                        <source src="./videos/J Balvin - 6 AM ft. Farruko.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/047857/ffffff?text=Video+Educativo+3" alt="Video Educativo 3" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">10 de marzo, 2025</span>
+                    <h3 class="video-title">Prácticas Sostenibles en el Hogar</h3>
+                    <p class="video-description">Consejos prácticos para reducir tu huella ecológica desde casa.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/J Balvin - 6 AM ft. Farruko.mp4', 'Prácticas Sostenibles en el Hogar')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News Posts Grid -->
+    <section class="news-posts-section">
+        <div class="section-header">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <p class="section-subtitle">Mantente informado con nuestras últimas noticias y actualizaciones</p>
+        </div>
+        <div class="news-posts-grid">
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/10b981/ffffff?text=Noticia+1" alt="Noticia 1" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Educación</span>
+                    <h3 class="post-title">Nueva Alianza con Ministerio de Educación para Programas Ambientales</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 17 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Equipo EP Lirio</span>
+                    </div>
+                    <p class="post-excerpt">Firmamos convenio con el Ministerio de Educación para implementar programas de educación ambiental en 50 escuelas rurales.</p>
+                    <a class="read-more-btn" onclick="openModal('Nueva Alianza con Ministerio de Educación', '17 mar, 2025', 'Equipo EP Lirio', 'https://placehold.co/800x250/10b981/ffffff?text=Noticia+1+Completa', 'Firmamos convenio con el Ministerio de Educación para implementar programas de educación ambiental en 50 escuelas rurales. Este acuerdo permitirá llevar recursos educativos, capacitación docente y materiales didácticos a comunidades que históricamente han tenido acceso limitado a la educación ambiental. El programa se implementará durante los próximos tres años y beneficiará directamente a más de 10,000 estudiantes en zonas rurales del departamento de Sucre.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/059669/ffffff?text=Noticia+2" alt="Noticia 2" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Eventos</span>
+                    <h3 class="post-title">Festival de la Naturaleza 2025: ¡Inscríbete Ya!</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 15 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Ana Gómez</span>
+                    </div>
+                    <p class="post-excerpt">Nuestro festival anual de educación ambiental se realizará el próximo mes con actividades para toda la familia.</p>
+                    <a class="read-more-btn" onclick="openModal('Festival de la Naturaleza 2025', '15 mar, 2025', 'Ana Gómez', 'https://placehold.co/800x250/059669/ffffff?text=Festival+2025', 'Nuestro festival anual de educación ambiental se realizará el próximo mes con actividades para toda la familia. El evento incluirá talleres prácticos, exhibiciones interactivas, juegos ecológicos, presentaciones culturales y espacios para la reflexión sobre la conservación del medio ambiente. La entrada es completamente gratuita y abierta a todas las edades. ¡No te lo pierdas!')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/047857/ffffff?text=Noticia+3" alt="Noticia 3" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Comunidad</span>
+                    <h3 class="post-title">Graduación de 100 Jóvenes Embajadores Ambientales</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 12 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Juan Pérez</span>
+                    </div>
+                    <p class="post-excerpt">Celebramos la graduación de 100 jóvenes que completaron nuestro programa de formación en liderazgo ambiental.</p>
+                    <a class="read-more-btn" onclick="openModal('Graduación de 100 Jóvenes Embajadores Ambientales', '12 mar, 2025', 'Juan Pérez', 'https://placehold.co/800x250/047857/ffffff?text=Graduación+Jóvenes', 'Celebramos la graduación de 100 jóvenes que completaron nuestro programa de formación en liderazgo ambiental. Estos jóvenes, provenientes de diferentes comunidades del departamento, han recibido capacitación intensiva en temas como conservación de ecosistemas, cambio climático, economía circular y liderazgo comunitario. Ahora están preparados para ser agentes de cambio en sus territorios.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/10b981/ffffff?text=Noticia+4" alt="Noticia 4" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Investigación</span>
+                    <h3 class="post-title">Publicación de Estudio sobre Impacto Educativo</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 10 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Dr. Carlos Méndez</span>
+                    </div>
+                    <p class="post-excerpt">Presentamos los resultados de nuestro estudio sobre el impacto de los programas educativos en comunidades rurales.</p>
+                    <a class="read-more-btn" onclick="openModal('Publicación de Estudio sobre Impacto Educativo', '10 mar, 2025', 'Dr. Carlos Méndez', 'https://placehold.co/800x250/10b981/ffffff?text=Estudio+Impacto', 'Presentamos los resultados de nuestro estudio sobre el impacto de los programas educativos en comunidades rurales. La investigación, realizada durante dos años, demuestra que los estudiantes que participan en nuestros programas muestran un 45% más de conocimientos ambientales y un 30% mayor compromiso con prácticas sostenibles en sus hogares.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/059669/ffffff?text=Noticia+5" alt="Noticia 5" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Donaciones</span>
+                    <h3 class="post-title">Gracias a Nuestros Donantes por Apoyar la Educación Ambiental</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 8 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Equipo EP Lirio</span>
+                    </div>
+                    <p class="post-excerpt">Reconocemos la generosidad de nuestros donantes cuyo apoyo ha permitido expandir nuestros programas educativos.</p>
+                    <a class="read-more-btn" onclick="openModal('Gracias a Nuestros Donantes por Apoyar la Educación Ambiental', '8 mar, 2025', 'Equipo EP Lirio', 'https://placehold.co/800x250/059669/ffffff?text=Donantes+2025', 'Reconocemos la generosidad de nuestros donantes cuyo apoyo ha permitido expandir nuestros programas educativos. Gracias a sus contribuciones, hemos podido llegar a 25 nuevas comunidades, capacitar a 50 docentes y distribuir más de 5,000 materiales educativos. Su apoyo es fundamental para continuar nuestra misión de educación ambiental.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="news-post-card">
+                <img src="https://placehold.co/400x200/047857/ffffff?text=Noticia+6" alt="Noticia 6" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Voluntariado</span>
+                    <h3 class="post-title">Convocatoria Abierta para Voluntarios Educativos</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 5 mar, 2025</span>
+                        <span><i class="far fa-user"></i> María Rodríguez</span>
+                    </div>
+                    <p class="post-excerpt">Buscamos voluntarios apasionados por la educación ambiental para unirnos en nuestras actividades comunitarias.</p>
+                    <a class="read-more-btn" onclick="openModal('Convocatoria Abierta para Voluntarios Educativos', '5 mar, 2025', 'María Rodríguez', 'https://placehold.co/800x250/047857/ffffff?text=Voluntariado+2025', 'Buscamos voluntarios apasionados por la educación ambiental para unirnos en nuestras actividades comunitarias. Si tienes conocimientos en biología, educación, comunicación o simplemente pasión por la naturaleza, ¡queremos conocerte! Ofrecemos capacitación, experiencia práctica y la oportunidad de hacer una diferencia real en la conservación ambiental.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="social-content">
+            <h2 class="section-title">Síguenos en Redes Sociales</h2>
+            <p class="section-subtitle">Mantente conectado y comparte nuestra misión de educación ambiental</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <img src="./img/logo.jpg" alt="Logo EP Lirio de los Valles">
+                    </div>
+                    <div class="footer-logo-text">Fundación EP Lirio de los Valles</div>
+                </div>
+                <p class="footer-description">
+                    Protegiendo el futuro a través de la educación y conservación ambiental. 
+                    Nuestro compromiso es crear un mundo más sostenible para las próximas generaciones.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="quienessomos.html"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galeria </a></li>
+                    <li><a href="donar.html"><i class="fas fa-chevron-right"></i> Donar</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Información</h3>
+                <ul class="footer-links">
+                    <li><a href="politicasdeprivacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                    <li><a href="terminosycondiciones.html"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:fundacionepliriodelosvalles@gmail.com"><i class="fas fa-envelope"></i>fundacionepliriodelosvalles@gmail.com</a></li>
+                    <li><a href="tel:+573202682396"><i class="fas fa-phone"></i> +573202682396</a></li>
+                    <li><a href="https://share.google/P6tmC6esEr31FkC6d"><i class="fas fa-map-marker-alt"></i> Ciudad Sincelejo, Sucre</a></li>
+                    <li><a href="https://www.google.es/maps?daddr=CARRERA+7+B+29+B+44+BRR+EL+CORTIJO,+SINCELEJO,+SUCRE"><i class="fas fa-map-marker-alt"></i> Direccion, CARRERA 7 B 29 B 44 BARRIO EL CORTIJO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fundación EP Lirio de los Valles. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Button -->
+    <a href="https://walink.co/81f70b" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Contáctanos por WhatsApp</span>
+    </a>
+    <!-- Chatbot Button -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fas fa-robot"></i>
+            <span class="chatbot-tooltip">Asistente Virtual</span>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <span>Asistente Virtual</span>
+                <button class="chatbot-close" id="chatbot-close">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    ¡Hola! 👋 Soy tu asistente virtual de la Fundación EP Lirio de los Valles. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+                <button id="chatbot-send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para leer más -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Título de la noticia</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Imagen de la noticia" class="modal-image" id="modal-image">
+                <div class="modal-meta">
+                    <span><i class="far fa-calendar"></i> <span id="modal-date"></span></span>
+                    <span><i class="far fa-user"></i> <span id="modal-author"></span></span>
+                </div>
+                <p class="modal-text" id="modal-text"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para videos -->
+    <div class="video-modal-overlay" id="video-modal-overlay">
+        <div class="video-modal-content">
+            <div class="video-modal-header">
+                <h3 class="video-modal-title" id="video-modal-title">Título del Video</h3>
+                <button class="video-modal-close" id="video-modal-close">&times;</button>
+            </div>
+            <div class="video-modal-player">
+                <video id="video-modal-player" controls></video>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./Javascript/noticias.js"></script>
+</body>
+</html>

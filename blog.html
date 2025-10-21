@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Fundación EP Lirio de los Valles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/fav-icon fundacion.png">
+    <link rel="stylesheet" href="./estilos/blog.css">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn theme-btn-light active" onclick="setTheme('light')" title="Tema Claro">☀️</button>
+        <button class="theme-btn theme-btn-dark-green" onclick="setTheme('dark-green')" title="Tema Verde Oscuro">🌲</button>
+        <button class="theme-btn theme-btn-dark" onclick="setTheme('dark')" title="Tema Oscuro">🌙</button>
+        <button class="theme-btn theme-btn-coffee" onclick="setTheme('coffee')" title="Tema Café">☕</button>
+        <button class="theme-btn theme-btn-blue" onclick="setTheme('blue')" title="Tema Azul">💧</button>
+        <button class="theme-btn theme-btn-pink" onclick="setTheme('pink')" title="Tema Rosa">🌸</button>
+        <button class="theme-btn theme-btn-purple" onclick="setTheme('purple')" title="Tema Púrpura">👑</button>
+        <button class="theme-btn theme-btn-orange" onclick="setTheme('orange')" title="Tema Naranja">🌅</button>
+        <button class="theme-btn theme-btn-yellow" onclick="setTheme('yellow')" title="Tema Amarillo">🌻</button>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="./img/logo.jpg" alt="Logo EP Lirio de los Valles">
+                </div>
+                <div class="logo-text">Fundación EP Lirio de los Valles</div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="donar.html">Donar</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <h1 class="blog-title">Nuestro Blog</h1>
+        <p class="blog-subtitle">Descubre las últimas noticias, historias inspiradoras y actualizaciones sobre nuestros proyectos de conservación y educación ambiental.</p>
+    </section>
+    <!-- Historia de la Fundación -->
+    <section class="history-section">
+        <div class="history-container">
+            <img src="https://placehold.co/600x500/10b981/ffffff?text=Fundación+2008" alt="Fundación EP Lirio de los Valles" class="history-image">
+            <div class="history-content">
+                <h2>Nuestra Historia</h2>
+                <span class="founding-year">Fundada en 2008</span>
+                <p>
+                    La Fundación EP Lirio de los Valles nació en el año 2008 como una respuesta al llamado de Dios para servir a las comunidades más vulnerables de la región. 
+                    Lo que comenzó como un pequeño grupo de personas comprometidas con la justicia social y la dignidad humana, se ha convertido en una organización 
+                    sólida que impacta miles de vidas cada año.
+                </p>
+                <p>
+                    Inspirados por los valores cristianos y el compromiso con la equidad, iniciamos nuestro trabajo en los barrios más marginados de Sincelejo, 
+                    llevando alimentos, acompañamiento espiritual y apoyo educativo a familias en situación de pobreza extrema. 
+                    Con el tiempo, nuestra visión se amplió para incluir programas de vivienda digna, desarrollo comunitario y conservación ambiental.
+                </p>
+                <p>
+                    Hoy, después de más de 17 años de servicio ininterrumpido, seguimos fieles a nuestra misión original: 
+                    "Disminuir la pobreza, el hambre, el desempleo y la desigualdad en comunidades vulnerables, brindando igualdad de oportunidades 
+                    para emprender y mejorar su calidad de vida."
+                </p>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="section-header">
+            <h2 class="section-title">Destacados del Blog</h2>
+            <p class="section-subtitle">Explora nuestras publicaciones más recientes y relevantes</p>
+        </div>
+        <div class="blog-carousel-container">
+            <div class="blog-carousel">
+                <div class="blog-carousel-inner" id="blog-carousel-inner">
+                    <div class="blog-carousel-item">
+                        <img src="https://placehold.co/1200x500/10b981/ffffff?text=Conservación+de+Bosques" alt="Conservación de Bosques">
+                        <div class="blog-carousel-overlay">
+                            <span class="blog-carousel-date">15 de marzo, 2025</span>
+                            <h3 class="blog-carousel-title">Conservación de Bosques: Nuestro Compromiso con la Naturaleza</h3>
+                            <p class="blog-carousel-excerpt">Descubre cómo nuestros proyectos de reforestación están transformando comunidades y protegiendo ecosistemas vitales para las futuras generaciones.</p>
+                            <a href="noticias.html" class="blog-carousel-btn" onclick="openModal('Conservación de Bosques: Nuestro Compromiso con la Naturaleza', '15 de marzo, 2025', 'Equipo EP Lirio', 'https://placehold.co/800x250/10b981/ffffff?text=Conservación+de+Bosques', 'Descubre cómo nuestros proyectos de reforestación están transformando comunidades y protegiendo ecosistemas vitales para las futuras generaciones. Nuestro compromiso con la naturaleza va más allá de plantar árboles; buscamos restaurar ecosistemas completos y crear conciencia ambiental en las comunidades.')">
+                                <i class="fas fa-arrow-right"></i> Leer más
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-carousel-item">
+                        <img src="https://placehold.co/1200x500/059669/ffffff?text=Educación+Ambiental" alt="Educación Ambiental">
+                        <div class="blog-carousel-overlay">
+                            <span class="blog-carousel-date">10 de marzo, 2025</span>
+                            <h3 class="blog-carousel-title">Educación Ambiental en las Escuelas</h3>
+                            <p class="blog-carousel-excerpt">Nuestros programas educativos están formando a la próxima generación de guardianes del medio ambiente en comunidades rurales.</p>
+                            <a href="#" class="blog-carousel-btn" onclick="openModal('Educación Ambiental en las Escuelas', '10 de marzo, 2025', 'María Rodríguez', 'https://placehold.co/800x250/059669/ffffff?text=Educación+Ambiental', 'Nuestros programas educativos están formando a la próxima generación de guardianes del medio ambiente en comunidades rurales. A través de talleres interactivos, juegos y actividades prácticas, los estudiantes aprenden sobre la importancia de cuidar nuestro planeta.')">
+                                <i class="fas fa-arrow-right"></i> Leer más
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog-carousel-item">
+                        <img src="https://placehold.co/1200x500/047857/ffffff?text=Voluntariado+Comunitario" alt="Voluntariado Comunitario">
+                        <div class="blog-carousel-overlay">
+                            <span class="blog-carousel-date">5 de marzo, 2025</span>
+                            <h3 class="blog-carousel-title">Voluntariado Comunitario: Juntos por un Futuro Sostenible</h3>
+                            <p class="blog-carousel-excerpt">Conoce las historias de nuestros voluntarios y cómo su dedicación está haciendo una diferencia real en la conservación ambiental.</p>
+                            <a href="#" class="blog-carousel-btn" onclick="openModal('Voluntariado Comunitario: Juntos por un Futuro Sostenible', '5 de marzo, 2025', 'Juan Pérez', 'https://placehold.co/800x250/047857/ffffff?text=Voluntariado+Comunitario', 'Conoce las historias de nuestros voluntarios y cómo su dedicación está haciendo una diferencia real en la conservación ambiental. Cada voluntario aporta su tiempo, energía y pasión para construir un futuro más sostenible para todos.')">
+                                <i class="fas fa-arrow-right"></i> Leer más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-carousel-control prev" id="blog-prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="blog-carousel-control next" id="blog-next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="blog-carousel-indicators" id="blog-carousel-indicators">
+                    <span class="blog-indicator active" data-slide="0"></span>
+                    <span class="blog-indicator" data-slide="1"></span>
+                    <span class="blog-indicator" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Videos Section -->
+    <section class="videos-section">
+        <div class="section-header">
+            <h2 class="section-title">Videos Destacados</h2>
+            <p class="section-subtitle">Mira nuestros videos más recientes y conoce nuestro trabajo en acción</p>
+        </div>
+        <div class="videos-grid">
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/10b981/ffffff?text=Video+1">
+                        <source src="./videos/Beéle - morena (Video Oficial).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/10b981/ffffff?text=Video+1" alt="Video 1" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">12 de marzo, 2025</span>
+                    <h3 class="video-title">Reforestación en Acción</h3>
+                    <p class="video-description">Mira cómo nuestros equipos trabajan incansablemente para restaurar bosques degradados y crear hábitats sostenibles.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/Beéle - morena (Video Oficial).mp4', 'Reforestación en Acción')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/059669/ffffff?text=Video+2">
+                        <source src="./videos/J Balvin - Rio (Official Video).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/059669/ffffff?text=Video+2" alt="Video 2" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">8 de marzo, 2025</span>
+                    <h3 class="video-title">Educación Ambiental para Niños</h3>
+                    <p class="video-description">Descubre cómo enseñamos a los más pequeños sobre la importancia de cuidar nuestro planeta a través de actividades divertidas.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/J Balvin - Rio (Official Video).mp4', 'Educación Ambiental para Niños')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-player">
+                    <video poster="https://placehold.co/400x220/047857/ffffff?text=Video+3">
+                        <source src="./videos/Rauw Alejandro - Enchule (Video Oficial).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <img src="https://placehold.co/400x220/047857/ffffff?text=Video+3" alt="Video 3" class="video-thumbnail">
+                    <div class="play-button" onclick="playVideo(this)">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-content">
+                    <span class="video-date">3 de marzo, 2025</span>
+                    <h3 class="video-title">Impacto de Nuestros Proyectos</h3>
+                    <p class="video-description">Testimonios reales de las comunidades que han sido transformadas por nuestros programas de conservación y desarrollo sostenible.</p>
+                    <a class="video-btn" onclick="openVideoModal('./videos/Rauw Alejandro - Enchule (Video Oficial).mp4', 'Impacto de Nuestros Proyectos')">
+                        <i class="fas fa-play"></i> Ver video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Posts Grid -->
+    <section class="blog-posts-section">
+        <div class="section-header">
+            <h2 class="section-title">Últimas Publicaciones</h2>
+            <p class="section-subtitle">Mantente informado con nuestras últimas noticias y actualizaciones</p>
+        </div>
+        <div class="blog-posts-grid">
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/10b981/ffffff?text=Noticia+1" alt="Noticia 1" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Conservación</span>
+                    <h3 class="post-title">Nuevas Especies Descubiertas en Nuestras Áreas Protegidas</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 14 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Equipo EP Lirio</span>
+                    </div>
+                    <p class="post-excerpt">Nuestros investigadores han documentado tres nuevas especies de flora en las zonas de conservación que administramos.</p>
+                    <a class="read-more-btn" onclick="openModal('Nuevas Especies Descubiertas en Nuestras Áreas Protegidas', '14 mar, 2025', 'Equipo EP Lirio', 'https://placehold.co/800x250/10b981/ffffff?text=Noticia+1', 'Nuestros investigadores han documentado tres nuevas especies de flora en las zonas de conservación que administramos. Este descubrimiento refuerza la importancia de proteger estos ecosistemas únicos y biodiversos.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/059669/ffffff?text=Noticia+2" alt="Noticia 2" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Educación</span>
+                    <h3 class="post-title">Talleres de Educación Ambiental en 10 Nuevas Escuelas</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 12 mar, 2025</span>
+                        <span><i class="far fa-user"></i> María Rodríguez</span>
+                    </div>
+                    <p class="post-excerpt">Ampliamos nuestro alcance educativo a 10 nuevas instituciones educativas en zonas rurales del departamento.</p>
+                    <a class="read-more-btn" onclick="openModal('Talleres de Educación Ambiental en 10 Nuevas Escuelas', '12 mar, 2025', 'María Rodríguez', 'https://placehold.co/800x250/059669/ffffff?text=Noticia+2', 'Ampliamos nuestro alcance educativo a 10 nuevas instituciones educativas en zonas rurales del departamento. Estos talleres incluyen actividades prácticas, juegos interactivos y materiales didácticos diseñados para fomentar la conciencia ambiental desde temprana edad.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/047857/ffffff?text=Noticia+3" alt="Noticia 3" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Comunidad</span>
+                    <h3 class="post-title">Celebración del Día del Árbol con 500 Plantones</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 10 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Juan Pérez</span>
+                    </div>
+                    <p class="post-excerpt">Más de 200 personas participaron en nuestra jornada de reforestación comunitaria en el parque central.</p>
+                    <a class="read-more-btn" onclick="openModal('Celebración del Día del Árbol con 500 Plantones', '10 mar, 2025', 'Juan Pérez', 'https://placehold.co/800x250/047857/ffffff?text=Noticia+3', 'Más de 200 personas participaron en nuestra jornada de reforestación comunitaria en el parque central. Juntos plantamos 500 árboles nativos, contribuyendo a la restauración del ecosistema urbano y creando conciencia sobre la importancia de los árboles en nuestras ciudades.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/10b981/ffffff?text=Noticia+4" alt="Noticia 4" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Donaciones</span>
+                    <h3 class="post-title">Gracias a Nuestros Donantes por Hacer Posible Nuestro Trabajo</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 8 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Equipo EP Lirio</span>
+                    </div>
+                    <p class="post-excerpt">Reconocemos la generosidad de nuestros donantes cuyo apoyo financiero ha permitido expandir nuestros programas.</p>
+                    <a class="read-more-btn" onclick="openModal('Gracias a Nuestros Donantes por Hacer Posible Nuestro Trabajo', '8 mar, 2025', 'Equipo EP Lirio', 'https://placehold.co/800x250/10b981/ffffff?text=Noticia+4', 'Reconocemos la generosidad de nuestros donantes cuyo apoyo financiero ha permitido expandir nuestros programas. Gracias a sus contribuciones, hemos podido llegar a más comunidades, capacitar a más voluntarios y realizar más proyectos de conservación.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/059669/ffffff?text=Noticia+5" alt="Noticia 5" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Investigación</span>
+                    <h3 class="post-title">Estudio sobre la Biodiversidad en Nuestras Reservas</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 5 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Dr. Carlos Méndez</span>
+                    </div>
+                    <p class="post-excerpt">Presentamos los resultados preliminares de nuestro estudio de biodiversidad que monitorea más de 200 especies.</p>
+                    <a class="read-more-btn" onclick="openModal('Estudio sobre la Biodiversidad en Nuestras Reservas', '5 mar, 2025', 'Dr. Carlos Méndez', 'https://placehold.co/800x250/059669/ffffff?text=Noticia+5', 'Presentamos los resultados preliminares de nuestro estudio de biodiversidad que monitorea más de 200 especies. Este estudio, que se realiza anualmente, nos permite evaluar la salud de nuestros ecosistemas y tomar decisiones informadas para su conservación.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post-card">
+                <img src="https://placehold.co/400x200/047857/ffffff?text=Noticia+6" alt="Noticia 6" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Eventos</span>
+                    <h3 class="post-title">Próximo Evento: Jornada de Limpieza de Ríos</h3>
+                    <div class="post-meta">
+                        <span><i class="far fa-calendar"></i> 3 mar, 2025</span>
+                        <span><i class="far fa-user"></i> Ana Gómez</span>
+                    </div>
+                    <p class="post-excerpt">Únete a nosotros el próximo sábado para nuestra gran jornada de limpieza de los ríos de nuestra región.</p>
+                    <a class="read-more-btn" onclick="openModal('Próximo Evento: Jornada de Limpieza de Ríos', '3 mar, 2025', 'Ana Gómez', 'https://placehold.co/800x250/047857/ffffff?text=Noticia+6', 'Únete a nosotros el próximo sábado para nuestra gran jornada de limpieza de los ríos de nuestra región. Necesitamos voluntarios apasionados por el medio ambiente para ayudarnos a limpiar y proteger estos ecosistemas vitales.')">
+                        Leer más <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                        <img src="./img/logo.jpg" alt="Logo EP Lirio de los Valles">
+                    </div>
+                    <div class="footer-logo-text">Fundación EP Lirio de los Valles</div>
+                </div>
+                <p class="footer-description">
+                    Protegiendo el futuro a través de la educación y conservación ambiental. 
+                    Nuestro compromiso es crear un mundo más sostenible para las próximas generaciones.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="quienessomos.html"><i class="fas fa-chevron-right"></i> Quiénes Somos</a></li>
+                    <li><a href="galeria.html"><i class="fas fa-chevron-right"></i> Galeria </a></li>
+                    <li><a href="donar.html"><i class="fas fa-chevron-right"></i> Donar</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Información</h3>
+                <ul class="footer-links">
+                    <li><a href="politicasdeprivacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                    <li><a href="terminosycondiciones.html"><i class="fas fa-chevron-right"></i> Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:fundacionepliriodelosvalles@gmail.com"><i class="fas fa-envelope"></i>fundacionepliriodelosvalles@gmail.com</a></li>
+                    <li><a href="tel:+573202682396"><i class="fas fa-phone"></i> +573202682396</a></li>
+                    <li><a href="https://share.google/P6tmC6esEr31FkC6d"><i class="fas fa-map-marker-alt"></i> Ciudad Sincelejo, Sucre</a></li>
+                    <li><a href="https://www.google.es/maps?daddr=CARRERA+7+B+29+B+44+BRR+EL+CORTIJO,+SINCELEJO,+SUCRE"><i class="fas fa-map-marker-alt"></i> Direccion, CARRERA 7 B 29 B 44 BARRIO EL CORTIJO</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fundación EP Lirio de los Valles. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Button -->
+    <a href="https://walink.co/81f70b" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Contáctanos por WhatsApp</span>
+    </a>
+    <!-- Chatbot Button -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fas fa-robot"></i>
+            <span class="chatbot-tooltip">Asistente Virtual</span>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <span>Asistente Virtual</span>
+                <button class="chatbot-close" id="chatbot-close">&times;</button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    ¡Hola! 👋 Soy tu asistente virtual de la Fundación EP Lirio de los Valles. ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje...">
+                <button id="chatbot-send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para leer más -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">Título de la noticia</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Imagen de la noticia" class="modal-image" id="modal-image">
+                <div class="modal-meta">
+                    <span><i class="far fa-calendar"></i> <span id="modal-date"></span></span>
+                    <span><i class="far fa-user"></i> <span id="modal-author"></span></span>
+                </div>
+                <p class="modal-text" id="modal-text"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para videos -->
+    <div class="video-modal-overlay" id="video-modal-overlay">
+        <div class="video-modal-content">
+            <div class="video-modal-header">
+                <h3 class="video-modal-title" id="video-modal-title">Título del Video</h3>
+                <button class="video-modal-close" id="video-modal-close">&times;</button>
+            </div>
+            <div class="video-modal-player">
+                <video id="video-modal-player" controls></video>
+            </div>
+        </div>
+    </div>
+    <script src="./Javascript/blog.js"></script>
+</body>
+</html>
